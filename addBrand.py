@@ -33,9 +33,9 @@ for r in range(2, rows+1):
     driver.find_element_by_xpath('//*[@id="brand_form"]/div/div/input[1]').click()
     time.sleep(5)
     if driver.title=="Select brand to change | Django site admin":
-        excel.writeData(path,"Sheet2",r,5,"test passed")
+        excel.writeData(path,"Sheet2",r,5,"Thành công")
     else:
-        excel.writeData(path,"Sheet2",r,5,"test failed")
+        excel.writeData(path,"Sheet2",r,5,"Thất bại")
     driver.find_element_by_xpath('//*[@id="site-name"]/a').click()
         
 

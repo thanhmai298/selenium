@@ -43,9 +43,9 @@ for r in range(2, rows+1):
     driver.find_element_by_xpath('/html/body/div[3]/div/div/form/input[2]').click()
     time.sleep(5)
     if driver.find_element_by_xpath('/html/body/div[3]/div/div/div'):
-        excel.writeData(path,"Sheet1", r, 3, "test passed")
+        excel.writeData(path,"Sheet1", r, 3, "Thành công")
     else:
-        excel.writeData(path,"Sheet1", r, 3, "test failed")
+        excel.writeData(path,"Sheet1", r, 3, "Thất bại")
 
 
 
